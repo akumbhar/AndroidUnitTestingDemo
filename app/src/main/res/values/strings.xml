@@ -1,3 +1,633 @@
 <resources>
-    <string name="app_name">MyUnitTestApplication</string>
+    <string name="app_name">Entrata Facilities</string>
+    <string name="field_indicator">Field Indicator</string>
+    <string name="login">Login</string>
+    <string name="send_password_reset">Send Password Reset</string>
+    <string name="subdomain">SUBDOMAIN</string>
+    <string name="password">PASSWORD</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="user_name">USERNAME</string>
+    <string name="your_domain">Your subdomain is an identifier \n unique to your company which is \n used to access entrata.</string>
+    <string name="If_you_are_unsure_of_your_domain">If you are unsure of your \n subdomain, please contact your \n IT administrator.</string>
+    <string name="domain"><u>subdomain</u></string>
+    <string name="left_icon">left icon</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="inspections">Inspections</string>
+    <string name="no_current_tasks">No Current Tasks</string>
+    <string name="nice_work">Nice Work!</string>
+    <string name="no_current_work_orders">No Current Work Orders</string>
+    <string name="no_current_inspections">No Current Inspections</string>
+    <string name="assign">Assign</string>
+    <string name="abbr_service_request">SR</string>
+    <string name="concatenate_without_space">%s%s</string>
+    <string name="abbrv_inspections">IM</string>
+    <string name="username_or_password_is_incorrect">Username or password is incorrect</string>
+    <string name="email">EMAIL</string>
+    <string name="email_sent">Email Sent</string>
+    <string name="entrata">Entrata</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="entrata_com">.entrata.com</string>
+    <string name="what_is_my_subdomain">WHAT\'S MY SUBDOMAIN?</string>
+    <string name="help">Help</string>
+    <string name="logout">Log out</string>
+    <string name="settings">Settings</string>
+    <string name="about_this_app_text">About This App</string>
+    <string name="about_this_app_version">Version:</string>
+    <string name="about_this_app_build_text"> build </string>
+    <string name="about_this_app_beta_text">**This is a beta version of this app. Some functionality is not yet available**</string>
+    <string name="updated_text">Updated:</string>
+    <string name="entrata_year">©2023 Entrata</string>
+    <string name="close_subdomain">Close Subdomain</string>
+    <string name="required_field">This field is required…</string>
+    <string name="email_or_subdomain_incorrect">Email and/or subdomain is incorrect</string>
+    <string name="app_release_date">03/10/2023</string>
+    <string name="ok">Ok</string>
+    <string name="internet_error_message">Please check your wi-fi or cellular data connection and try again.</string>
+    <string name="assigned_to_updated">Assigned to updated</string>
+    <string name="failed">FAILED</string>
+    <string name="photos">PHOTOS</string>
+    <string name="permission_to_enter">Permission to enter</string>
+    <string name="animals">Animals</string>
+    <string name="Property">Property</string>
+    <string name="start_work">Start Work</string>
+    <string name="stop_work">Stop Work</string>
+    <string name="description">Description</string>
+    <string name="sub_tasks_unknown">Subtasks (%s)</string>
+    <string name="subtask_deleted"> Sub-task deleted successfully.</string>
+    <string name="content_close">Close screen</string>
+    <string name="content_unit_information">Unit Information</string>
+    <string name="content_assigned_icon">Assigned to</string>
+    <string name="calender_icon">CalenderIcon</string>
+    <string name="history">History</string>
+    <string name="name">NAME</string>
+    <string name="send">Send</string>
+    <string name="content_selection_tick">Selection check mark</string>
+    <string name="call">Call</string>
+    <string name="contact">Contact</string>
+    <string name="about">About</string>
+    <string name="unassigned">Unassigned</string>
+    <string name="scheduler_unknown">Scheduled: %s</string>
+    <string name="created_unknown">Created: %s</string>
+    <string name="completed_unknown">Completed: %s</string>
+    <string name="save">Save</string>
+    <string name="captured_picture">Captured picture</string>
+    <string name="add_notes">Add notes</string>
+    <string name="visible_to_resident">Visible to resident</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="due_date_unknown">Due: %s</string>
+    <string name="status_only">status</string>
+    <string name="dash">-</string>
+    <string name="double_dash">--</string>
+    <string name="notes">Notes</string>
+    <string name="notes_unknown">Notes (%s)</string>
+    <string name="update_status_menu">Update Status</string>
+    <string name="add_new_note">Add a new note</string>
+    <string name="status_updated">Status updated successfully</string>
+    <string name="connection_lost">Connection was lost</string>
+    <string name="date_created">Created %s </string>
+    <string name="delete">Delete</string>
+    <string name="no_history_data">No History Data</string>
+    <string name="note">Note</string>
+    <string name="note_added">Note added</string>
+    <string name="note_add_failed">Note add failed</string>
+    <string name="unit_details">Unit Details</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera">Camera</string>
+    <string name="attachment_deleted">Attachment deleted successfully</string>
+    <string name="attachment_note_edited">Attachment note edited successfully</string>
+    <string name="attachment_saved">Attachment added</string>
+    <string name="delete_attachment_failed">Delete attachment failed</string>
+    <string name="search">Search</string>
+    <string name="permission_messege">App need permissions for capturing images from Gallery and Camera. Please grant permissions by following given path.\n App Settings -> Permissions</string>
+    <string name="problem">Problem</string>
+    <string name="general">general</string>
+    <string name="create">Create</string>
+    <string name="type">Type</string>
+    <string name="unit_resident_title">Unit/Resident</string>
+    <string name="assigned_employee">Assigned Employee</string>
+    <string name="location">Location</string>
+    <string name="category">Category</string>
+    <string name="priority">Priority</string>
+    <string name="add_sub_task">Add Subtask</string>
+    <string name="delete_create_work_order_data">Do you want to cancel creation of this work order?</string>
+    <string name="view">View</string>
+    <string name="done">Done</string>
+    <string name="action">Action</string>
+    <string name="inspection_repairs">Inspection Repairs</string>
+    <string name="inspected_by">Inspected: %s</string>
+    <string name="inspection">Inspection</string>
+    <string name="update">update</string>
+    <string name="subtask_added_successfully">Sub-task added successfully.</string>
+    <string name="subtask">Subtask</string>
+    <string name="colon">:</string>
+    <string name="_00">00</string>
+    <string name="improper_setup_error_message">Your property requires locations and problems to create work orders. Please contact a system administrator.</string>
+    <string name="no_matching_results">No Matching Results</string>
+    <string name="next">Next</string>
+    <string name="service_request_created">Service request created</string>
+    <string name="montserrat_regular_font_full_path" translatable="false">montserrat/Montserrat-Regular.ttf</string>
+    <string name="montserrat_light_font_full_path" translatable="false">montserrat/Montserrat-Light.ttf</string>
+    <string name="montserrat_regular_font" translatable="false">Montserrat-Regular.ttf</string>
+    <string name="montserrat_light_font" translatable="false">Montserrat-Light.ttf</string>
+    <string name="montserrat_bold_font" translatable="false">Montserrat-Bold.ttf</string>
+    <string name="montserrat_semi_bold_font" translatable="false">Montserrat-SemiBold.otf</string>
+    <string name="montserrat_italic_font" translatable="false">Montserrat-Italic.ttf</string>
+    <string name="montserrat_medium_font" translatable="false">Montserrat-Medium.ttf</string>
+    <string name="close_about_this_screen">Close about this screen</string>
+    <string name="unit">Unit</string>
+    <string name="property">Property</string>
+    <string name="entry_notes">Entry Notes</string>
+    <string name="attached_image">attached image</string>
+    <string name="brown_entrata_bold_font_full_path" translatable="false">roboto/BrownEntrataTT-Bold.ttf</string>
+    <string name="brown_entrata_display_font_full_path" translatable="false">roboto/BrownEntrataTT-Display.ttf</string>
+    <string name="montserrat_bold_font_full_path" translatable="false">montserrat/Montserrat-Bold.ttf</string>
+    <string name="montserrat_semi_bold_italic" translatable="false">montserrat/Montserrat-SemiBoldItalic.ttf</string>
+    <string name="vacant">VACANT</string>
+    <string name="overview">Overview</string>
+    <string name="not_started">Not Started</string>
+    <string name="in_progress">In Progress</string>
+    <string name="under_review">Under Review</string>
+    <string name="past_due">Past Due</string>
+    <string name="approved">Approved</string>
+    <string name="service_request">Service Request</string>
+    <string name="service_requests">Service Requests</string>
+    <string name="recurring">Recurring</string>
+    <string name="make_ready">Make Ready</string>
+    <string name="make_readies">Make Readies</string>
+    <string name="feature_upgrade">Feature Upgrade</string>
+    <string name="for_example">For example:</string>
+    <string name="forgot_password_message">No problem! Enter your email\naddress below and we\'ll send you\na link to reset your password.</string>
+    <string name="unable_to_load_database_error_message">Unable to load the database for the subdomain you provided.</string>
+    <string name="the_item_you_were_viewing_is_no_longer_available">The item you were viewing is no longer available.</string>
+    <string name="sort_by">Sort by</string>
+    <string name="done_caps">Done</string>
+    <string name="date_created_oldest_to_newest">Date Created: Oldest to Newest</string>
+    <string name="date_created_newest_to_oldest">Date Created: Newest to Oldest</string>
+    <string name="date_scheduled_oldest_to_newest">Date Scheduled: Oldest to Newest</string>
+    <string name="date_scheduled_newest_to_oldest">Date Scheduled: Newest to Oldest</string>
+    <string name="date_due_oldest_to_newest">Date Due: Oldest to Newest</string>
+    <string name="date_due_newest_to_oldest">Date Due: Newest to Oldest</string>
+    <string name="filter">Filter</string>
+    <string name="sort">Sort</string>
+    <string name="created">Created</string>
+    <string name="scheduled">Scheduled</string>
+    <string name="respond_by">Respond By</string>
+    <string name="due_by">Due By</string>
+    <string name="anytime">Anytime</string>
+    <string name="today">Today</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="last_unknown_days">Last %s days</string>
+    <string name="custom_range">Custom Range…</string>
+    <string name="date_type">Date Type</string>
+    <string name="timing">Timing</string>
+    <string name="unknown_filter_applied">%s Filter Applied</string>
+    <string name="unknown_filters_applied">%s Filters Applied</string>
+    <string name="reset_filters">Reset Filters</string>
+    <string name="date">Date</string>
+    <string name="status">Status</string>
+    <string name="assigned_to">Assigned to</string>
+    <string name="apply">Apply</string>
+    <string name="showing_unknown_task">Showing %s task</string>
+    <string name="showing_unknown_tasks">Showing %s tasks</string>
+    <string name="showing_unknown_workorder">Showing %s work order</string>
+    <string name="showing_unknown_workorders">Showing %s work orders</string>
+    <string name="showing_unknown_inspection">Showing %s inspection</string>
+    <string name="showing_unknown_inspections">Showing %s inspections</string>
+    <string name="between">Between</string>
+    <string name="start_date">Start Date</string>
+    <string name="end_date">End Date</string>
+    <string name="task_filters">Task Filters</string>
+    <string name="work_orders_filters">Work Order Filters</string>
+    <string name="inspection_filters">Inspection Filters</string>
+    <string name="preventive">Preventive</string>
+    <string name="emergency">Emergency</string>
+    <string name="high">High</string>
+    <string name="medium">Medium</string>
+    <string name="low">Low</string>
+    <string name="open">Open</string>
+    <string name="suspended">Suspended</string>
+    <string name="multiple_properties">Multiple Properties</string>
+    <string name="workorders">Work Orders</string>
+    <string name="more">More</string>
+    <string name="unassigned_tasks">Unassigned Tasks</string>
+    <string name="hide_assignable_users">Hide assignable users</string>
+    <string name="show_assignable_users">Show assignable users</string>
+    <string name="unknown_selected">%s Selected</string>
+    <string name="reset">Reset</string>
+    <string name="select_start_date">Select Start Date</string>
+    <string name="select_end_date">Select End Date</string>
+    <string name="no_properties_selected">no properties selected</string>
+    <string name="show">show</string>
+    <string name="hide">hide</string>
+    <string name="properties">properties</string>
+    <string name="unassigned_work_orders">Unassigned Work orders</string>
+    <string name="unassigned_inspections">Unassigned Inspections</string>
+    <string name="sync_device">Sync device</string>
+    <string name="send_feedback">Send feedback</string>
+    <string name="just_now">Just Now</string>
+    <string name="unknown_minutes_ago">about %s minutes ago</string>
+    <string name="unknown_hour_ago">about %s hour ago</string>
+    <string name="unknown_hours_ago">about %s hours ago</string>
+    <string name="unknown_plus_five_hours_ago">about %s.5 hours ago</string>
+    <string name="unknown_day_ago">about %s day ago</string>
+    <string name="unknown_days_ago">about %s days ago</string>
+    <string name="unknown_week_ago">about %s week ago</string>
+    <string name="unknown_weeks_ago">about %s weeks ago</string>
+    <string name="unknown_month_ago">about %s month ago</string>
+    <string name="unknown_months_ago">about %s months ago</string>
+    <string name="on_unknown">on %s</string>
+    <string name="select_properties">Select Properties</string>
+    <string name="notifications">Notifications</string>
+    <string name="language">Language</string>
+    <string name="call_permission_message">App need permissions for phone Call. Please grant permissions by following given path.\n App Settings -> Permissions</string>
+    <string name="push_notifications">Push Notifications</string>
+    <string name="remind_me">Remind me</string>
+    <string name="before">before.</string>
+    <string name="new_service_requests">New Service Requests</string>
+    <string name="assigned_to_me">Assigned to me</string>
+    <string name="scheduled_reminders">Scheduled Reminders</string>
+    <string name="remind_me_bottom_sheet">Remind me…</string>
+    <string name="unknown_minutes_before">%s Minutes Before</string>
+    <string name="one_hour_before">1 Hour Before</string>
+    <string name="two_hours_before">2 Hours</string>
+    <string name="notification_settings">Notification Settings</string>
+    <string name="facilities_by_entrata">Facilities by entrata</string>
+    <string name="sub_tasks_should_be_close_message">You must complete all subtasks prior to closing this work order</string>
+    <string name="please_enable_notifications">Please enable notifications</string>
+    <string name="ninety_nine_plus">99+</string>
+    <string name="create_service_request">create service request</string>
+    <string name="select_language">Select Language</string>
+    <string name="get_started">Get Started</string>
+    <string name="focused_dashboard">Focused Dashboard</string>
+    <string name="focused_dashboard_message">Be informed about what\'s most important at a glance.</string>
+    <string name="get_stuff_done">Get Stuff Done</string>
+    <string name="tell_us_what_you_think">Tell us what you think</string>
+    <string name="my_tasks_message">Build your own personalized to-do list within the new My Tasks Tab.</string>
+    <string name="get_stuff_done_message">Drill into the details of any service request with ease.</string>
+    <string name="tell_us_what_you_think_message">Let us know what you like and don\'t like. We care what you think!</string>
+    <string name="task_details">Task Details</string>
+    <string name="check_it_out">Check It Out</string>
+    <string name="the_new_and_improve_facilities_app">The new and\nimproved\nfacilities app</string>
+    <string name="alarm_code">Alarm Code</string>
+    <string name="reassign">Reassign</string>
+    <string name="add_a_photo">Add a Photo</string>
+    <string name="attachments">Attachments (%s)</string>
+    <string name="resident">Resident</string>
+    <string name="residents">Residents</string>
+
+    <string-array name="contact_type_title">
+        <item>Call</item>
+    </string-array>
+
+    <string name="asset_statement" translatable="false">
+        [{
+        \"relation\": [\"delegate_permission/common.share_location\"],
+        \"target\": {
+          \"namespace\": \"android_app\",
+          \"package_name\": \"com.entrata.facilities\",
+          \"sha256_cert_fingerprints\": [\"A2:C3:82:47:E5:FB:05:5B:52:75:04:E1:70:65:EC:37:7F:A1:EE:44:E0:97:28:4D:AB:87:FF:78:CC:D4:15:A7\"]
+        }
+      }]
+    </string>
+
+    <string name="unit_history">Unit History</string>
+    <string name="permission_to_enter_caps">Permission to Enter</string>
+    <string name="other_occupants_caps">Other Occupants</string>
+    <string name="delete_subtask">Delete subtask</string>
+    <string name="view_parent_task">View Parent Task</string>
+    <string name="push_alert_dialog">Do you want to proceed and discard your current task?</string>
+    <string name="delete_subtask_messege">Are you sure you want to delete this subtask?</string>
+    <string name="task_activity">Task Activity</string>
+    <string name="area_details">Area Details</string>
+    <string name="area_history">Area History</string>
+    <string name="update_now">Update Now</string>
+    <string name="later">Later</string>
+    <string name="update_available">Update Available</string>
+    <string name="force_update_message">There is a new version of Entrata Facilities App available. You must update to continue using this application.</string>
+    <string name="routine_update_message">There is a new version of Entrata Facilities App Available.</string>
+    <string name="property_synced">%s Property Synced</string>
+    <string name="properties_synced">%s Properties Synced</string>
+    <string name="property_failed">%s Property Failed</string>
+    <string name="properties_failed">%s Properties Failed</string>
+    <string name="property_synced_successfully">%s Property Synced Successfully</string>
+    <string name="properties_synced_successfully">%s Properties Synced Successfully</string>
+    <string name="app_reset_completed">App Reset Completed</string>
+    <string name="app_reset_in_progress">App Reset in Progress</string>
+    <string name="new_items_are_available_tap_to_refresh">New items are available. Tap to refresh.</string>
+    <string name="push_notification_unsynced_alert_message">"We are syncing the property to retrieve the item you requested. We will notify you when the property is ready to view."</string>
+    <string name="create_new_work_order">Create new work order</string>
+    <string name="attachment_is_required">Attachment is required.</string>
+    <string name="menu">Menu</string>
+    <string name="closing_note_caps">CLOSING NOTE</string>
+    <string name="save_and_complete">Save and Complete</string>
+    <string name="select_action">Select Action</string>
+    <string name="continue_string">Continue</string>
+    <string name="unit_ascending">Unit - Ascending</string>
+    <string name="unit_descending">Unit - Descending</string>
+    <string name="inspected">Inspected (%d)</string>
+    <string name="complete_all">Complete all</string>
+    <string name="inspection_title">Inspection:</string>
+    <string name="inspection_submitted_for_review">Inspection submitted for review</string>
+    <string name="property_inspection">Property Inspection</string>
+    <string name="due_date_oldest_to_newest">Due Date: Oldest to Newest</string>
+    <string name="due_date_newest_to_oldest">Due Date: Newest to Oldest</string>
+    <string name="attach_to">Attach To</string>
+    <string name="alert_there_is_additional_information_you_need_to_know_about_this_resident_or_unit">Alert! There is additional information you need to know about this resident or unit.</string>
+    <string name="view_message">View Message</string>
+    <string name="alert_information">Alert Information</string>
+    <string name="close">Close</string>
+    <string name="add_note">Add Note</string>
+    <string name="edit_note">Edit Note</string>
+    <string name="delete_photo">Delete Photo</string>
+    <string name="delete_attachment_message">Are you sure you want to delete this photo?</string>
+    <string name="unknown_roomates">%d Roomates</string>
+    <string name="select_properties_unknown">Select Properties (%d)</string>
+    <string name="add_a_note">Add a note…</string>
+    <string name="select_an_action">Select an Action</string>
+    <string name="pass">Pass</string>
+    <string name="fail">Fail</string>
+    <string name="newly_created_service_requests_at_my_properties">Newly created service requests at my properties</string>
+    <string name="off">Off</string>
+    <string name="emergency_service_requests_only">Emergency service requests only</string>
+    <string name="all_new_service_requests">All new service requests</string>
+    <string name="emergency_assignments_only">Emergency assignments only</string>
+    <string name="all_assignments">All assignments</string>
+    <string name="remind_before_an_assignment_scheduled_to_nbegin">Remind before an assignment is scheduled to \nbegin.</string>
+    <string name="any_type_of_work_order_or_inspection_assigned_to_me">Any type of work order or inspection assigned to me</string>
+    <string name="text_copied_to_clipboard">Text copied to clipboard</string>
+    <string name="attachment_visible_to_resident">Visible to resident</string>
+    <string name="you_have_unknown_assigned_tasks">You have %d assigned tasks</string>
+    <string name="you_have_unknown_assigned_task">You have %d assigned task</string>
+    <string name="add_materials">Add Material</string>
+    <string name="materials">Materials</string>
+    <string name="post">Post</string>
+    <string name="entry">Entry</string>
+    <string name="lock">Lock</string>
+    <string name="unlock">Unlock</string>
+    <string name="to_complete_inspection_connect_to_wifi">To complete the inspection and submit it for review, please connect to Wi-Fi</string>
+    <string name="saving">Saving</string>
+    <string name="please_wait">Please Wait</string>
+    <string name="connect_to_wi_fi">Connect to Wi-Fi</string>
+    <string name="work_in_progress_message">Today\'s work is still being saved. You will be logged out when the save is complete.</string>
+    <string name="work_needs_to_be_saved_message">Today\'s work needs to be saved. Please connect to Wi-Fi before logging out.</string>
+    <string name="unknown_items_synced">(%d/%d items synced)</string>
+    <string name="feedback_sent">Feedback Sent</string>
+    <string name="materials_unknown">Materials (%d)</string>
+    <string name="po_unknown">PO: %s</string>
+    <string name="posted_on_unknown">Post date: %s</string>
+    <string name="material">Material</string>
+    <string name="asset_serial_id">Asset Serial ID</string>
+    <string name="post_now">Post now:</string>
+    <string name="post_date">Post Date</string>
+    <string name="quantity">Quantity</string>
+    <string name="locations">Locations</string>
+    <string name="search_materials">Search Materials</string>
+    <string name="select_material">Select Material</string>
+    <string name="select_location">Select Location</string>
+    <string name="post_date_format">Post Date Format</string>
+    <string name="location_with_cached_items" translatable="false">%d (%d)</string>
+    <string name="select_quantity">Select Quantity</string>
+    <string name="do_not_retire_existing_asset">Do Not Retire Existing Asset</string>
+    <string name="retire_asset">Retire Asset</string>
+    <string name="saml_login">SAML Login</string>
+    <string name="no_action">No Action</string>
+    <string name="want_to_close_work_order">Are you sure you want to close this work order? This work order still has subtasks that have not been completed. Closing it will also close the subtasks</string>
+    <string name="search_work_orders">Search Work Orders</string>
+    <string name="search_my_tasks">Search My Tasks</string>
+    <string name="search_completed_work_orders">Search completed Work Orders</string>
+    <string name="completed">Completed</string>
+    <string name="date_range">Date Range</string>
+    <string name="assignment">Assignment</string>
+    <string name="select_date_type">Select a date type</string>
+    <string name="select_properties_title_case">Select properties</string>
+    <string name="properties_title_case">Properties</string>
+    <string name="select_timing">Select timing</string>
+    <string name="select_users">Select users</string>
+    <string name="multiple_users">Multiple users</string>
+    <string name="multiple">Multiple</string>
+    <string name="clear_filters">Clear %d Filters</string>
+    <string name="inspection_notes">Inspection notes</string>
+    <string name="update_notes">Update note</string>
+    <string name="sms">SMS</string>
+    <string name="search_by">Search By</string>
+    <string name="ref">Ref #</string>
+    <string name="syncing_properties">Syncing properties %d/%d</string>
+    <string name="loading_items_for">Loading items for %s</string>
+    <string name="compose_email">Compose an Email</string>
+    <string name="user_email">Use logged in user email</string>
+    <string name="message">Message</string>
+    <string name="subject">Subject</string>
+    <string name="body">Body</string>
+    <string name="create_message">Create Text Message</string>
+    <string name="photos_case">Photos</string>
+    <string name="add_a_note_regular">Add a note</string>
+    <string name="last_refresh">Last refresh:</string>
+    <string name="seconds_ago">seconds ago</string>
+    <string name="seconds_ago_with_value">%s seconds ago</string>
+    <string name="minute_ago">%s minute ago</string>
+    <string name="minutes_ago">%s minutes ago</string>
+    <string name="hour_ago">%s hour ago</string>
+    <string name="hours_ago">%s hours ago</string>
+    <string name="day_ago">%s day ago</string>
+    <string name="days_ago">%s days ago</string>
+    <string name="week_ago">%s week ago</string>
+    <string name="weeks_ago">%s weeks ago</string>
+    <string name="month_ago">%s month ago</string>
+    <string name="months_ago">%s months ago</string>
+    <string name="require_photo_location_problem">Please add a photo to items that have a note or action.</string>
+    <string name="require_photo_location_problem_actions">Please add a photo to all selected actions</string>
+    <string name="resident_signatures">Resident Signatures</string>
+    <string name="clear">Clear Signature</string>
+    <string name="accept">Accept</string>
+    <string name="sign">Sign</string>
+    <string name="showMore">Show More</string>
+    <string name="showLess">Show Less</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="month">month</string>
+    <string name="months">months</string>
+    <string name="year">year</string>
+    <string name="years">years</string>
+    <string name="and">and</string>
+
+    <!--    resident_since to resident_for-->
+    <string name="resident_for">Resident for %s</string>
+
+    <string name="select_priority">Select Priority</string>
+    <string name="template">Template</string>
+    <string name="select_template">Select Template</string>
+    <string name="multiple_template">Multiple templates</string>
+
+    <string name="feedback_content">How was your experience using the facilities app?</string>
+    <string name="feedback_action_not_great">Not Great</string>
+    <string name="feedback_action_neutral">Neutral</string>
+    <string name="feedback_action_awesome">Awesome!</string>
+
+    <!--Update Value-->
+    <string name="feedback">Feedback</string>
+    <string name="required">"Required "</string>
+    <string name="seed_feedback">Send App Feedback</string>
+    <string name="comments">Comments</string>
+    <string name="feedback_title_alert">Thank You!</string>
+    <string name="feedback_content_alert">Your input is very\n important to us!</string>
+    <string name="buildings">Buildings</string>
+    <string name="select_buildings">Select Buildings</string>
+    <string name="select_date">Select Date</string>
+    <string name="s">S</string>
+    <string name="m">M</string>
+    <string name="t">T</string>
+    <string name="w">W</string>
+    <string name="f">F</string>
+    <string name="total_time">Total Time</string>
+    <string name="select_time">Select Time</string>
+    <string name="time_type">Time Type</string>
+    <string name="add_time">Add Time</string>
+    <string name="employee">Employee</string>
+    <string name="select_employee">Select Employee</string>
+    <string name="regular">Regular</string>
+    <string name="overtime">Overtime</string>
+    <string name="holiday">Holiday</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="rate">Rate</string>
+    <string name="save_time">Save Time</string>
+    <string name="am">AM</string>
+    <string name="pm">PM</string>
+    <string name="labor_tracking">Labor tracking</string>
+    <string name="start">Start</string>
+    <string name="end">End</string>
+    <string name="total">Total</string>
+    <string name="edit">Edit</string>
+    <string name="hrs">hrs</string>
+    <string name="min">min</string>
+    <string name="delete_labor">Labor log time deleted successfully.</string>
+    <string name="labor_date_validtion"> Invalid Time Range.( End date time must be later than start date time. ) Total time is required.</string>
+    <string name="resident_type_applicant">Applicant</string>
+    <string name="resident_type_canceled">Canceled</string>
+    <string name="resident_type_future">Future</string>
+    <string name="resident_type_current">Current</string>
+    <string name="resident_type_notice">Notice</string>
+    <string name="resident_type_past">Past</string>
+    <string name="text_create_wo_pet_info_note">According to the resident information, we have determined the following animals to be in the unit:</string>
+    <string name="internal_error">An issue occurred. The app will restart now.</string>
+    <string name="complete_inspection">Complete Inspection</string>
+
+
+    <!--for create inspection-->
+    <string name="create_new_inspection">Create new inspection</string>
+    <string name="inspection_type">Inspection Type</string>
+    <string name="inspection_template">Inspection Template</string>
+    <string name="scheduled_date">Scheduled date</string>
+    <string name="inspected_by_user">Inspected By</string>
+    <string name="due_date">Due date</string>
+    <string name="select_property">Select a Property</string>
+    <string name="select_inspection_type">Select an inspection type</string>
+    <string name="select_inspection_template">Select an inspection template</string>
+    <string name="select_one">Select one</string>
+    <string name="notify_current_resident">Notify current residents of upcoming inspection</string>
+    <string name="email_text">Email text</string>
+    <string name="email_text_details">Your property has scheduled an inspection for your unit.</string>
+    <string name="add_hazard_note">Add Hazard Note.</string>
+    <string name="unit_hazards">Unit Hazards</string>
+    <string name="hazard_end_date">Hazard End Date</string>
+    <string name="hazard_note">Hazard Note</string>
+    <string name="applicant">Applicant</string>
+    <string name="select_applicant">Select an applicant</string>
+    <string name="select_resident">Select a resident</string>
+    <string name="select_unit">Select a unit</string>
+    <string name="delete_create_inspection_data">Do you want to cancel creation of this inspection?</string>
+    <string name="configure_unit_alert_message">No inspections locations are available for that unit. Please configure the unit locations at Setup > Property > Floorplans</string>
+    <string name="internet_unavailable">The internet connection appears to be offline</string>
+    <string name="due_date_validation_alert">Due date must be greater that scheduled date</string>
+    <string name="inspection_request_created">Inspection created successfully</string>
+    <string name="submit_inspection">Submit Inspection</string>
+    <string name="inspection_dialog">Inspection submitted for review</string>
+    <string name="search_hint">Search reference or unit number</string>
+    <string name="units">Units</string>
+    <string name="reference_number">Reference Number</string>
+    <string name="txt_facilities">Facilities</string>
+    <string name="unknown_error_create_inspection">Unknown error occurred while creating the inspection</string>
+    <string name="empty_applicant_list">Empty applicant list</string>
+    <string name="property_loading_content_1">
+        <![CDATA[Did you know you can manually enter and edit labor time for <b>work orders</b> and <b>make readies</b>?]]>
+    </string>
+    <string name="property_loading_content_2">
+        <![CDATA[To share feedback about the app, tap <b>more</b> and select <b>Send App Feedback</b>]]>
+    </string>
+    <string name="property_loading_content_3">
+        <![CDATA[Updating the <b>sort order</b> allows you to see the <b>most relevant tasks</b> for you and your team.]]>\
+    </string>
+    <string name="property_loading_content_4">
+        <![CDATA[Did you know that you can <b>Filter</b> or <b>Search</b> for <b>completed</b> and <b>cancelled</b> tasks, not just open tasks?]]>
+    </string>
+    <string name="property_loading_content_5">
+        <![CDATA[You can do your job while <b>offline</b> and upload any changes once you are back online by <b>syncing your device.</b>]]>
+    </string>
+
+    // custom component text
+    <string name="required_text"><font fgcolor='#FF0000'>*</font> Required</string>
+    <string name="date_error_out_bound">This date is outside the selectable bounds</string>
+    <string name="date_error_validate">This date does not match the date format</string>
+
+    <string name="user_name_new">Username</string>
+    <string name="sub_domain_new">Subdomain</string>
+    <string name="password_new">Password</string>
+
+    <string name="email_new">Email</string>
+    <string name="date_range_asterick"><font color="#FF0000">*</font>Date Range</string>
+    <string name="hide_caps">Hide</string>
+    <string name="details">Details</string>
+
+    <string name="complete_all_caps">Complete All</string>
+    <string name="clean">Clean</string>
+    <string name="repair">Repair</string>
+    <string name="replace">Replace</string>
+
+
+    <string name="property_staff">Property/Staff</string>
+    <string name="routine">Routine</string>
+    <string name="move_in">Move In</string>
+    <string name="move_out">Move Out</string>
+    <string name="resident_specific_inspection">The inspection has been created and assigned to the Resident.
+        To view this inspection, the resident can view it in the ResidentPortal app. The staff can view it in Entrata.</string>
+
+    <string name="app_review_message">Are you enjoying the app?</string>
+    <string name="love_it">Yes, I love it!</string>
+    <string name="needs_work">Needs work</string>
+
+    <string name="facilities_terms_conditions">Entrata Facilities Terms of Use</string>
+    <string name="facilities_terms_conditions_non_spannable">I have read and accept the </string>
+    <string name="facilities_terms_conditions_spannable">Terms Conditions &amp; privacy Policy</string>
+    <string name="other_open_work_orders">Other Open Work Orders</string>
+
+    <string name="select_unit_resident">Select Unit/Resident</string>
+    <string name="select_category">Select Category</string>
+    <string name="select_problem">Select Problem</string>
+
+    <string name="required_star"><font color="#FF0000">*</font></string>
+    <string name="unit_or_resident">unit or resident</string>
+
+    <string name="feedback_offline_message">Go online to send feedback</string>
+    <string name="properties_offline_message">Go online to select properties</string>
+    <string name="notifications_offline_message">Go online to edit notifications</string>
+
+    <string name="unit_history_offline_message">Go online to view unit history</string>
+    <string name="other_open_wo_unit_history_offline_message">Go online to view other open work orders</string>
+    <string name="entry_offline_message"> Go online to access door lock</string>
+
+    <string name="invalid_username_password_dialogue_title">We don\'t recognize your username or password.</string>
+    <string name="invalid_username_password_desc_dialogue_desc">Please correct the issue and try again.</string>
+
+    <string name="invalid_subdomain_dialogue_title">We don\’t recognize that subdomain.</string>
+    <string name="invalid_subdomain_dialogue_desc">The subdomain you entered may be misspelled or incorrect. Please correct the issue and try again.</string>
+
+    <string name="complete">Complete</string>
+    <string name="create_subtask">Create Subtask</string>
+    <string name="photos_small_case">Photos</string>
+
+    <string name="zero_properties_selected">0 properties selected</string>
+    <string name="unknown_error_occurred">Unknown error occurred.</string>
+
 </resources>

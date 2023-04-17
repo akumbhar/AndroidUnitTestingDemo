@@ -1,18 +1,217 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@color/forgot_password_background_color">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <RelativeLayout
+        android:id="@+id/layout_loading_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/main_login_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/entrata_logo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="72dp"
+                    android:gravity="center"
+                    android:text="@string/entrata"
+                    android:textColor="@color/red"
+                    android:textSize="40sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/entrata_badge_text"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/entrata_badge_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/montserrat_regular"
+                    android:gravity="center"
+                    android:text="@string/txt_facilities"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toTopOf="@+id/loginErrorBanner"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/entrata_logo" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/loginErrorBanner"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@color/activeBgColor"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/entrata_badge_text">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/bannerErrorIcon"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="36dp"
+                        android:tint="@color/alizarin_crimson"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_alert_triangle" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/bannerErrorText"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="36dp"
+                        android:gravity="center"
+                        android:textColor="@color/alizarin_crimson"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/bannerErrorIcon"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="@string/invalid_username_password_dialogue_title" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_user_name"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:hint="@string/user_name_new"
+                    android:nextFocusDown="@id/et_sub_domain"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/image_border_bg"
+                    app:boxStrokeErrorColor="@color/colorPrimary"
+                    app:boxStrokeWidth="2dp"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:hintTextColor="@color/sirocco_2"
+                    app:layout_constraintBottom_toTopOf="@+id/et_sub_domain"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/loginErrorBanner">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/dark_gray_x_icon"
+                        android:textSize="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_sub_domain"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginEnd="35dp"
+                    android:hint="@string/sub_domain_new"
+                    android:nextFocusDown="@id/et_password"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/image_border_bg"
+                    app:boxStrokeErrorColor="@color/colorPrimary"
+                    app:boxStrokeWidth="2dp"
+                    app:endIconMode="custom"
+                    app:endIconTint="@color/image_border_bg"
+                    app:errorEnabled="false"
+                    app:errorIconDrawable="@null"
+                    app:hintTextColor="@color/sirocco_2"
+                    app:layout_constraintBottom_toTopOf="@+id/et_password"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_user_name">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:textColor="@color/dark_gray_x_icon"
+                        android:textSize="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/et_password"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="35dp"
+                    android:hint="@string/password_new"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/image_border_bg"
+                    app:boxStrokeErrorColor="@color/colorPrimary"
+                    app:boxStrokeWidth="2dp"
+                    app:errorEnabled="true"
+                    app:errorIconDrawable="@null"
+                    app:hintTextColor="@color/sirocco_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_sub_domain">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_regular"
+                        android:inputType="text"
+                        android:maxLength="22"
+                        android:textColor="@color/dark_gray_x_icon"
+                        android:textSize="16sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/brown_entrata_bold_font"
+                    android:text="@string/login"
+                    android:textSize="16sp"
+                    android:background="@color/red"
+                    android:textColor="@color/white"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/et_password"
+                    app:layout_goneMarginTop="16dp" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>
