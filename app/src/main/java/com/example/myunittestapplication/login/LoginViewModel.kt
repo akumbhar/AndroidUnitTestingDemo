@@ -1,8 +1,7 @@
-package com.example.myunittestapplication
+package com.example.myunittestapplication.login
 
 import androidx.lifecycle.ViewModel
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.count
 import kotlinx.coroutines.flow.flow
 import javax.inject.Inject
@@ -25,9 +24,9 @@ class LoginViewModel @Inject constructor(private val repository: LoginRepository
 
 
     fun loginUser(
-        username: String,
-        subDomain: String,
-        password: String,
+        username: String?,
+        subDomain: String?,
+        password: String?,
         hasInternetConnection:Boolean
     ) = flow {
 
@@ -49,8 +48,10 @@ class LoginViewModel @Inject constructor(private val repository: LoginRepository
                     emit(LoginState.ApiError(error.message))
                 }
                 apiResponse.response.result?.let { apiResult ->
+                    repository.saveToken(apiResult.accessToken)
                     emit(LoginState.HideLoading)
                     emit(LoginState.LoginSuccess)
+
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
@@ -60,14 +61,16 @@ class LoginViewModel @Inject constructor(private val repository: LoginRepository
         }
     }
 
-    private fun validateFields(username: String, subDomain: String, password: String) = flow {
-        if (username.isEmpty()) {
+    private fun validateFields(username: String?,
+                               subDomain: String?,
+                               password: String?,) = flow {
+        if (username.isNullOrEmpty()) {
             emit(LoginState.UserNameError)
         }
-        if (subDomain.isEmpty()) {
+        if (subDomain.isNullOrEmpty()) {
             emit(LoginState.SubdomainError)
         }
-        if (password.isEmpty()) {
+        if (password.isNullOrEmpty()) {
             emit(LoginState.PasswordError)
         }
     }

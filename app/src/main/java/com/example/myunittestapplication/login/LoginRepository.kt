@@ -1,4 +1,4 @@
-package com.example.myunittestapplication
+package com.example.myunittestapplication.login
 
 import com.example.myunittestapplication.retrofit.LocalRepository
 import com.example.myunittestapplication.retrofit.RemoteRepository
@@ -11,10 +11,11 @@ class LoginRepository @Inject constructor(
 ) {
 
     suspend fun loginUser(
-        username: String,
-        subDomain: String,
-        password: String
+        username: String?,
+        subDomain: String?,
+        password: String?
     ) = remoteRepository.authenticateUser(username, subDomain, password)
 
 
+    suspend fun saveToken(token:String) = localRepository.saveUserToken(token)
 }

@@ -1,4 +1,4 @@
-package com.example.myunittestapplication
+package com.example.myunittestapplication.login
 
 import android.content.Intent
 import android.os.Bundle
@@ -7,6 +7,8 @@ import android.view.View
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.myunittestapplication.R
+import com.example.myunittestapplication.dashboard.DashboardActivity
 import com.example.myunittestapplication.databinding.ActivityMainBinding
 import com.example.myunittestapplication.util.checkInternetConnection
 import dagger.hilt.android.AndroidEntryPoint
@@ -67,10 +69,11 @@ class LoginActivity : AppCompatActivity() {
 
                     LoginViewModel.LoginState.ShowLoading -> {
 
+                        showLoading()
                     }
 
                     LoginViewModel.LoginState.HideLoading -> {
-
+                        hideLoading()
                     }
 
                     LoginViewModel.LoginState.UnknownErrorOccurred -> {
@@ -104,13 +107,28 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
+    private fun hideLoading() {
+        hideErrorBanner()
+    }
+
+    private fun showLoading() {
+        binding.bannerErrorIcon.visibility = View.GONE
+        showErrorBanner("Logging in..")
+    }
+
     private fun showErrorBanner(errorMessage: String) {
         binding.loginErrorBanner.visibility = View.VISIBLE
         binding.bannerErrorText.text = errorMessage
     }
 
+    private fun hideErrorBanner() {
+        binding.loginErrorBanner.visibility = View.GONE
+    }
+
     private fun navigateToDashboard(){
-//        Intent(this, )
+        Intent(this, DashboardActivity::class.java).apply {
+            startActivity(this)
+        }
     }
 }
 
