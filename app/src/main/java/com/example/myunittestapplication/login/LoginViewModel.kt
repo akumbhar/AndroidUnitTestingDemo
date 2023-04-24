@@ -12,12 +12,12 @@ class LoginViewModel @Inject constructor(private val repository: LoginRepository
     sealed class LoginState {
         object ShowLoading : LoginState()
         object HideLoading : LoginState()
-        object UnknownErrorOccurred : LoginState()
         object UserNameError : LoginState()
         object PasswordError : LoginState()
         object SubdomainError : LoginState()
-        object LoginSuccess : LoginState()
         object InternetConnectionFailure : LoginState()
+        object LoginSuccess : LoginState()
+        object UnknownErrorOccurred : LoginState()
         class ApiError(val message: String) : LoginState()
 
     }

@@ -64,7 +64,6 @@ class LoginActivity : AppCompatActivity() {
     private fun observeFlows(loginUserFlow: Flow<LoginViewModel.LoginState>) {
         lifecycleScope.launch {
             loginUserFlow.collect { viewState ->
-                doLog("$viewState")
                 when (viewState) {
 
                     LoginViewModel.LoginState.ShowLoading -> {
